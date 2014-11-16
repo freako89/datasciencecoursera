@@ -1,0 +1,67 @@
+---
+title: "Spread Calculator for Brent and WTI"
+author: "Ng Zhi Xiong"
+highlighter: highlight.js
+output: html_document
+job: R Student
+knit: slidify::knit2slides
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Shiny App
+framework: io2012
+widgets: []
+---
+
+## Description
+
+Brent and WTI are Crude Oil Futures traded on the ICE Exchange, and CME Exchange respectively
+
+The app calculates the spread, aka the price difference between the two
+
+It only uses daily closing prices in the 2014 
+---
+## Inputs
+
+1. Users can choose the No. of Contracts it would like to look at 
+
+2. They can choose the price they would would have entered the market at
+
+3. They can choose the date which they would like to start plotting the graph
+
+-
+
+---
+## Output
+
+
+1. Current Spread Price is the Spread Price as of the latest trading day
+
+2. Spread Entry Price - Current Spread will output the PNL
+
+3. The first graph plots the spread price
+
+4. The second graph calculates the % change in Brent and WTI. Then it plots the difference
+
+
+
+---
+## Difficulties
+
+Because we need to load latest dataset from Quandl, we can only load 2014 or it will take a lot of time espacially for people with slow internet connection
+
+
+```
+##    user  system elapsed 
+##    0.09    0.05    1.42
+```
+
+```
+##    user  system elapsed 
+##    0.16    0.02    3.61
+```
+---
+## Usefulness
+
+1. Show's spread data which many financial websites will not show
+
+2. It also calculates the difference in % change which many financial websites do not show also
