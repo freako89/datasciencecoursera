@@ -1,0 +1,41 @@
+---
+title: "Documentation"
+author: "Ng Zhi Xiong"
+date: "Friday, September 19, 2014"
+output: html_document
+---
+
+## Description
+
+Brent and WTI are Crude Oil Futures traded on the ICE Exchange, and CME Exchange respectively
+
+The app calculates the spread, aka the price difference between the two. We take Brent Price - WTI Price
+
+It only uses daily closing prices in the 2014
+
+
+## Inputs
+
+1. They can choose the price they would would have entered the market at
+
+2. Hence, the profit and loss would be Entry Price - Current Price
+
+3. Your profit and loss decreases and increases according to the number of futures contract you buy
+
+4. For the dates, the user's choice will change then the graph starts plotting from. The end date will always be current date
+
+
+
+---
+## Output
+
+
+1. Current Spread Price is the Spread Price as of the latest trading day
+
+2. Spread Entry Price - Current Spread will output the PNL
+
+3. The first graph plots the spread price from the user chosen date to current date
+
+4. The second graph calculates the % change in Brent and WTI. Then it plots the difference from the user chosen date to current date
+
+
